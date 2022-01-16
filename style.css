@@ -6,7 +6,6 @@ html {
   line-height: 16px;
 	color: #000;
   font-family: 'Ubuntu', sans-serif;
-  height: 200vh;
 }
 a {
   text-decoration: none;
@@ -35,12 +34,13 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 .header {
   width: 100%;
   min-width: 800px;
-  /* position: fixed; */
-  /* top: 0; */
+  position: fixed;
+  top: 0;
   padding: 32px 48px;
   display: flex;
   flex-direction: column;
@@ -74,11 +74,14 @@ button {
   width: 100%;
   min-width: 800px;
   min-height: 200px;
+  position: fixed;
+  top: 160px;
   padding: 0px 48px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  
 }
 .order-list__header {
   width: 100%;
@@ -159,8 +162,11 @@ button {
   text-align: left;
 }
 .footer {
+  width: 100%;
   min-width: 800px;
   padding: 0px 48px;
+  position: fixed;
+  bottom: 0;
 }
 .footer__elemement {
   width: 100%;
