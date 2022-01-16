@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Панель администратора</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</had>
+<body>
+  <div class="wrapper">
+      <div class="header">
+          <div class="header__top">
+              <div class="panel-title">
+                <h2>Список заказов</h2>
+              </div>
+              <button class="button button-color-default theme-switch-button">Светлая тема</button>
+          </div>
+          <div class="header__search-and-filters">
+              <div class="searchbar">
+                <input class="input searchbar__input" placeholder="Номер заказа или ФИО" type="text" value="" />
+                <button class="button button-color-default filter-button">Фильтры</button>
+                <button class="button button-color-default filter-unset-button">Сбросить фильтры</button>
+              </div>
+              <button class="button button-color-default refresh-button">Загрузка</button>
+          </div>
+      </div>
+      <div class="order-list">
+        <ul class="order-list__header">
+          <li class="order-list__header_choice"><a href="#">[ ]</a></li>
+          <li class="order-list__header_order-id"><a href="#">#</a></li>
+          <li class="order-list__header_date"><a href="#">Дата</a></li>
+          <li class="order-list__header_status"><a href="#">Статус</a></li>
+          <li class="order-list__header_position-count"><a href="#">Позиций</a></li>
+          <li class="order-list__header_order-amount"><a href="#">Сумма</a></li>
+          <li class="order-list__header_customer-name"><a href="#">ФИО покупателя</a></li>
+        </ul> 
+        <ul class="order-list__content">
+          <li class="order-list__content_choice"><a href="#">[ ]</a></li>
+          <li class="order-list__content_order-id">1234567</li>
+          <li class="order-list__content_date">15.02.2021, 18:00</li>
+          <li class="order-list__content_status">Новый</li>
+          <li class="order-list__content_position-count">6</li>
+          <li class="order-list__content_order-amount">101 907 Р</li>
+          <li class="order-list__content_customer-name">Иванов Иван Иванович</li>
+        </ul> 
+      </div>
+      <div class="footer">
+        <div class="footer__elemement">
+          <p>Footer content will be here!</p>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
