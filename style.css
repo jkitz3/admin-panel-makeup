@@ -1,3 +1,4 @@
+@import "./icons/style.css";
 body,
 html {
 	width: 100%;
@@ -22,7 +23,6 @@ button {
   border-radius: 4px;
   background-color: unset;
   cursor: pointer;
-  transition: all .3s cubic-bezier(.645,.045,.355,1);
 }
 .button-color-default:hover {
   color: white;
@@ -30,11 +30,15 @@ button {
   border-color: #459DF5;
   opacity: 1;
 }
+.button-color-default:hover::before {
+  color: white;
+  transition: unset;
+}
 .wrapper {
+  /* min-height: 400px; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: relative;
+  justify-content: center; 
 }
 .header {
   width: 100%;
@@ -73,7 +77,6 @@ button {
 .order-list {
   width: 100%;
   min-width: 800px;
-  min-height: 200px;
   position: fixed;
   top: 160px;
   padding: 0px 48px;
@@ -172,8 +175,18 @@ button {
   width: 100%;
   background-color: #EBF0F5;
   color: #459DF5;
-  height: 40px;
+  min-height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.button::before {
+  color: #459DF5;
+  padding-right: 5px;
+}
+.theme-switch-button::before:hover {
+  background-color: white;
+}
+.order-list__header::before {
+  color: #459DF5;
 }
