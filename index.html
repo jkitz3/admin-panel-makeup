@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-</had>
+</head>
 <body>
   <div class="wrapper">
       <div class="header">
@@ -18,15 +18,44 @@
               <div class="panel-title">
                 <h2>Список заказов</h2>
               </div>
-              <button class="button button-color-default theme-switch-button icon-sun" >Светлая тема</button>
+              <button class="button button-color-default theme-switch-button" >Светлая тема</button>
           </div>
-          <div class="header__search-and-filters">
+          <div class="header__search-and-filters_off">
               <div class="searchbar">
+                <svg class="search-svg" viewBox="0 0 16 16" fill="none" stroke="#459DF5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5" fill="none"/>
+                </svg>
                 <input class="input searchbar__input" placeholder="Номер заказа или ФИО" type="text" value="" />
-                <button class="button button-color-default filter-button icon-filter">Фильтры</button>
+                <button class="button button-color-default filter-button">Фильтры</button>
                 <button class="button button-color-default filter-unset-button">Сбросить фильтры</button>
               </div>
-              <button class="button button-color-default refresh-button icon-checkmark">Загрузка</button>
+              <button class="button button-color-default refresh-button">Загрузка</button>
+          </div>
+          <div class="header__search-and-filters_on">
+            <div class="order-date">
+              <p class="order-date__title">Дата оформления</p>
+              <input class="input order-date__from-input" placeholder="dd.mm.dddd" type="text" value="" />
+              <input class="input order-date__to-input" placeholder="dd.mm.dddd" type="text" value="" />
+            </div>
+            <div class="order-status">
+              <p class="order-status__title">Статус заказа</p>
+              <input class="input order-status__input" placeholder="" type="text" value="Любой" />
+              <div class="order-status-dropdown">
+                <div class="order-status-dropdown__item">Новый</div>
+                <div class="order-status-dropdown__item">Рассчет</div>
+                <div class="order-status-dropdown__item">Подтвержден</div>
+                <div class="order-status-dropdown__item">Отложен</div>
+                <div class="order-status-dropdown__item">Выполнен</div>
+                <div class="order-status-dropdown__item">Отменен</div>
+              </div>
+              <div class="order-status__arrow-down"></div>
+            </div>
+            <div class="order-amount">
+              <p class="order-amount__title">Сумма заказа</p>
+              <input class="input order-amount__from-input" placeholder="" type="text" value="от " />
+              <input class="input order-amount__to-input" placeholder="" type="text" value="до " />
+              <button class="button button-color-default apply-button">Применить</button>
+            </div>
           </div>
       </div>
       <div class="order-list">
