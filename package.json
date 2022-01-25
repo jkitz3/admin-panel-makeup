@@ -13,9 +13,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,json,css,html}": [
-      "prettier --write --ignore-unknown"
-    ]
+    "src/**/*.{js,json,css,html}": "prettier --write ."
   },
   "repository": {
     "type": "git",
