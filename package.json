@@ -10,7 +10,7 @@
     "test": "echo 'No test specified yet"
   },
   "lint-staged": {
-    "**/*.{js,json,css,html}": "prettier --write"
+    "**/*.{js,json,css,html}": "prettier --write --ignore-unknown"
   },
   "repository": {
     "type": "git",
