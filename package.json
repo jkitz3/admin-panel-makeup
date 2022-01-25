@@ -9,9 +9,6 @@
     "lint-staged": "prettier --write --ignore-unknown",
     "test": "echo 'No test specified"
   },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jkitz3/admin-panel-makeup.git"
