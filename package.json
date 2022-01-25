@@ -6,7 +6,8 @@
   "scripts": {
     "prepare": "husky install",
     "pre-commit": "lint-staged",
-    "lint-staged": "prettier --write --ignore-unknown"
+    "lint-staged": "prettier --write --ignore-unknown",
+    "test": "echo 'No test specified"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
