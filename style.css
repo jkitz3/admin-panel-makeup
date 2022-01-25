@@ -1,16 +1,16 @@
 body,
 html {
-	width: 100%;
-	font-size: 13px;
+  width: 100%;
+  font-size: 13px;
   line-height: 16px;
-	color: #000;
-  font-family: 'Ubuntu', sans-serif;
+  color: #000;
+  font-family: "Ubuntu", sans-serif;
 }
 h2 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 32px;
-  color: #8055FF;
+  color: #8055ff;
 }
 .wrapper {
   width: 100%;
@@ -21,18 +21,18 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr auto;
-  grid-template-areas: 
-    'header'
-    'searchbar'
-    'order-list'
-    'footer';
+  grid-template-areas:
+    "header"
+    "searchbar"
+    "order-list"
+    "footer";
 }
 .header {
   display: grid;
   place-items: start;
   grid-area: header;
   height: 32px;
-  background-color: #A8A8FF;
+  background-color: #a8a8ff;
 }
 .wrapper__header {
   margin-bottom: 32px;
@@ -43,7 +43,7 @@ h2 {
   grid-template-columns: auto auto;
   justify-content: space-between;
   padding: 4px;
-  border: 2px solid #A8A8FF;
+  border: 2px solid #a8a8ff;
 }
 .wrapper__searchbar {
   margin-bottom: 32px;
@@ -57,20 +57,20 @@ h2 {
 .item-group__input {
   width: 256px;
   height: 32px;
-  background-color: #8055FF;
+  background-color: #8055ff;
   margin-right: 8px;
 }
 .item-group__filter-handler {
   width: 32px;
   height: 32px;
-  background-color: #8055FF;
+  background-color: #8055ff;
 }
 .searchbar__content-handler {
   display: grid;
   place-items: center;
   width: 32px;
   height: 32px;
-  background-color: #8055FF;
+  background-color: #8055ff;
 }
 .order-list {
   display: grid;
@@ -78,28 +78,28 @@ h2 {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   grid-area: order-list;
-  background-color: #A8A8FF;
+  background-color: #a8a8ff;
   min-height: 96px;
   overflow: auto;
   scrollbar-width: thin;
-  scrollbar-color: #A8A8FF #8055FF;
+  scrollbar-color: #a8a8ff #8055ff;
 }
 .order-list::-webkit-scrollbar {
   height: 5px;
   width: 5px;
 }
 .order-list::-webkit-scrollbar-track {
-  background: #8055FF;
+  background: #8055ff;
 }
 .order-list::-webkit-scrollbar-thumb {
-  background-color: #A8A8FF;
+  background-color: #a8a8ff;
   border-radius: 5px;
-  border: 1px solid #8055FF;
-} 
+  border: 1px solid #8055ff;
+}
 .order-list__header {
   width: 100%;
   display: grid;
-  background-color: #8055FF;
+  background-color: #8055ff;
   height: 48px;
   position: sticky;
   top: 0;
@@ -114,5 +114,5 @@ h2 {
   place-items: center;
   grid-area: footer;
   height: 48px;
-  background-color: #8055FF; 
+  background-color: #8055ff;
 }
