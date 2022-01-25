@@ -4,7 +4,6 @@
   "description": "admin-panel-makeup",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No test specified\"",
     "prepare": "husky install",
     "pre-commit": "lint-staged",
     "lint-staged": "prettier --write --ignore-unknown"
