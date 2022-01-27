@@ -47,7 +47,7 @@ html {
   height: 16px;
   top: 194px;
   left: 455px;
-  background-image: url(../icons/x-medium.svg);
+  background-image: url(./icons/x-medium.svg);
   background-repeat: no-repeat;
   background-color: unset;
   border: unset;
@@ -65,7 +65,7 @@ html {
   height: 16px;
   top: 293px;
   left: 455px;
-  background-image: url(../icons/locked.svg);
+  background-image: url(./icons/locked.svg);
   background-repeat: no-repeat;
   background-color: unset;
   border: unset;
