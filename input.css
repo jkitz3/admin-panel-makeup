@@ -58,6 +58,8 @@ html {
 .order-date__input_locked-value {
   background-color: #bad8f5;
   position: relative;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 .order-date__input-locked-icon {
   position: absolute;
@@ -72,4 +74,5 @@ html {
 }
 .order-date__input-title {
   padding-bottom: 8px;
+  /* cursor: pointer; */
 }
