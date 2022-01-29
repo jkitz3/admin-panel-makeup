@@ -14,50 +14,54 @@ html {
 }
 .ui-kit__input {
   position: relative;
-  width: 522px;
-  padding: 40px;
+  width: 358px;
+  padding: 48px;
   border: 1px dashed #a8a8ff;
   border-radius: 4px;
 }
 .item__order-date {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 300px;
 }
 .title__order-date {
   position: absolute;
-  top: -20px;
   left: 10px;
+  top: -20px;
   color: #a8a8ff;
 }
 .input {
+  width: 100%;
   min-height: 32px;
   border: 1px solid #459df5;
   border-radius: 4px;
-  width: 100%;
   padding: 0 32px 0 8px;
 }
 .order-date__input_incorrect-value {
   border-color: #f53152;
 }
 .x-button {
-  position: absolute;
   width: 16px;
+  position: absolute;
   height: 16px;
-  top: 194px;
-  left: 455px;
+  top: 159px;
+  left: 283px;
   background-image: url(./icons/x-medium.svg);
   background-repeat: no-repeat;
   background-color: unset;
   border: unset;
+  cursor: pointer;
 }
 .x-button:focus {
   outline: none;
 }
-.order-date__input_locked-value {
+.order-date__input {
+  margin-bottom: 22px;
+}
+.order-date__input:last-child {
+  margin-bottom: 0px;
+}
+.order-date__input_disabled {
   background-color: #bad8f5;
-  position: relative;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -65,14 +69,13 @@ html {
   position: absolute;
   width: 16px;
   height: 16px;
-  top: 293px;
-  left: 455px;
+  top: 236px;
+  left: 283px;
   background-image: url(./icons/locked.svg);
   background-repeat: no-repeat;
   background-color: unset;
   border: unset;
 }
 .order-date__input-title {
-  padding-bottom: 8px;
-  /* cursor: pointer; */
+  margin-bottom: 8px;
 }
