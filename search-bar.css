@@ -1,0 +1,68 @@
+.ui-kit__searchbar {
+  position: relative;
+  width: 396px;
+  min-width: 358px;
+  padding: 48px;
+  border: 1px dashed #a8a8ff;
+  border-radius: 4px;
+}
+.title__searchbar {
+  position: absolute;
+  left: 10px;
+  top: -20px;
+  color: #a8a8ff;
+}
+.searchbar {
+  display: flex;
+  flex-direction: column;
+}
+.searchbar__input {
+  margin-bottom: 32px;
+}
+.searchbar__input:last-child {
+  margin-bottom: 0px;
+}
+.searchbar__input_blank,
+.searchbar__input_filled {
+  position: relative;
+  padding-left: 32px;
+}
+.searchbar__input-icon_blank {
+  width: 16px;
+  position: absolute;
+  height: 16px;
+  top: 56px;
+  left: 57px;
+  background-image: url(./icons/search.svg);
+  background-repeat: no-repeat;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+}
+.searchbar__input-icon_filled {
+  width: 16px;
+  position: absolute;
+  height: 16px;
+  top: 120px;
+  left: 57px;
+  background-image: url(./icons/search.svg);
+  background-repeat: no-repeat;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+}
+.x-button_searchbar {
+  width: 16px;
+  position: absolute;
+  height: 16px;
+  top: 120px;
+  left: 321px;
+  background-image: url(./icons/x-medium.svg);
+  background-repeat: no-repeat;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+}
+.x-button:focus {
+  outline: none;
+}
