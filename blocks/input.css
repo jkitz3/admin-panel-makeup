@@ -12,64 +12,82 @@ html {
   padding: 32px;
   background-color: #ebf0f5;
 }
-.ui-kit__input {
-  position: relative;
-  width: 522px;
-  padding: 40px;
-  border: 1px dashed #a8a8ff;
-  border-radius: 4px;
-}
-.item__order-date {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 300px;
-}
-.title__order-date {
-  position: absolute;
-  top: -20px;
-  left: 10px;
-  color: #a8a8ff;
-}
 .input {
+  width: 100%;
   min-height: 32px;
   border: 1px solid #459df5;
   border-radius: 4px;
-  width: 100%;
   padding: 0 32px 0 8px;
 }
-.order-date__input_incorrect-value {
+.input:focus {
+  outline: none;
+}
+.input::-moz-placeholder {
+  color: #bad8f5;
+}
+.input::-webkit-input-placeholder {
+  color: #bad8f5;
+}
+.ui-kit__block {
+  position: relative;
+  width: 358px;
+  padding: 48px;
+  border: 1px dashed #a8a8ff;
+  border-radius: 4px;
+}
+.block__content {
+  display: flex;
+  flex-direction: column;
+}
+.block__title {
+  position: absolute;
+  left: 10px;
+  top: -20px;
+  color: #a8a8ff;
+}
+.block__order-date {
+  margin-bottom: 22px;
+}
+.block__order-date:last-child {
+  margin-bottom: 0px;
+}
+.order-date__content {
+  position: relative;
+}
+.order-date__input_incorrect {
   border-color: #f53152;
 }
-.x-button {
-  position: absolute;
+.order-date__button_x-button {
   width: 16px;
+  position: absolute;
   height: 16px;
-  top: 194px;
-  left: 455px;
+  top: 9px;
+  left: 235px;
   background-image: url(../icons/x-medium.svg);
   background-repeat: no-repeat;
   background-color: unset;
   border: unset;
+  cursor: pointer;
 }
-.x-button:focus {
+.order-date__button_x-button:focus {
   outline: none;
 }
-.order-date__input_locked-value {
+.order-date__input_disabled {
   background-color: #bad8f5;
-  position: relative;
+  cursor: not-allowed;
+  pointer-events: none;
 }
-.order-date__input-locked-icon {
+.order-date__icon_disabled {
   position: absolute;
   width: 16px;
   height: 16px;
-  top: 293px;
-  left: 455px;
+  top: 8px;
+  left: 235px;
   background-image: url(../icons/locked.svg);
   background-repeat: no-repeat;
   background-color: unset;
   border: unset;
 }
-.order-date__input-title {
-  padding-bottom: 8px;
+.order-date__title {
+  margin-bottom: 8px;
 }

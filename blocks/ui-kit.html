@@ -16,41 +16,53 @@
   </head>
   <body>
     <div class="ui-kit">
-      <div class="item ui-kit__input">
-        <div class="order-date item__order-date">
-          <div class="order-date__input">
-            <p class="order-date__input-title">Дата и время заказа</p>
-            <input
-              class="input order-date__input_blank-value"
-              placeholder="Введите"
-              type="text"
-              value=""
-            />
+      <div class="block ui-kit__block">
+        <div class="block__title">Input</div>
+        <div class="block__content">
+          <div class="order-date block__order-date">
+            <label class="order-date__title" for="orderDateBlank"
+              >Дата и время заказа</label
+            >
+            <div class="order-date__content">
+              <input
+                class="input order-date__input"
+                placeholder="Введите"
+                type="text"
+                id="orderDateBlank"
+                value=""
+              />
+            </div>
           </div>
-          <div class="order-date__input">
-            <p class="order-date__input-title">Дата и время заказа</p>
-            <input
-              class="input order-date__input_incorrect-value"
-              placeholder="Введите"
-              type="text"
-              value="06.12.2021"
-            />
-            <button
-              class="order-date__input button-color-default x-button"
-            ></button>
+          <div class="order-date block__order-date">
+            <label class="order-date__title" for="orderDateIncorrect"
+              >Дата и время заказа</label
+            >
+            <div class="order-date__content">
+              <input
+                class="input order-date__input order-date__input_incorrect"
+                placeholder="Введите"
+                type="text"
+                id="orderDateIncorrect"
+                value="06.12.2021"
+              />
+              <button
+                class="order-date__button order-date__button_x-button"
+              ></button>
+            </div>
           </div>
-          <div class="order-date__input">
-            <p class="order-date__input-title">Дата и время заказа</p>
-            <input
-              class="input order-date__input_locked-value"
-              placeholder="Введите"
-              type="text"
-              value="06.12.2021"
-            />
-            <div class="order-date__input-locked-icon"></div>
+          <div class="order-date block__order-date">
+            <p class="order-date__title">Дата и время заказа</p>
+            <div class="order-date__content">
+              <input
+                class="input order-date__input order-date__input_disabled"
+                placeholder="Введите"
+                type="text"
+                value="06.12.2021"
+              />
+              <div class="order-date__icon order-date__icon_disabled"></div>
+            </div>
           </div>
         </div>
-        <p class="order-date title__order-date">Input</p>
       </div>
     </div>
   </body>
