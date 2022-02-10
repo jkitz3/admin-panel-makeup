@@ -90,4 +90,6 @@ html {
 }
 .order-date__title {
   margin-bottom: 8px;
+  display: inline-block;
+  width: 100%;
 }
