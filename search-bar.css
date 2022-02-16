@@ -45,14 +45,6 @@ html {
   top: -20px;
   color: #a8a8ff;
 }
-.ui-kit__searchbar {
-  position: relative;
-  width: 396px;
-  min-width: 396px;
-  padding: 48px;
-  border: 1px dashed #a8a8ff;
-  border-radius: 4px;
-}
 .block__searchbar {
   margin-bottom: 32px;
 }
