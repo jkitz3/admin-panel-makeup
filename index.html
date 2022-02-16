@@ -12,77 +12,39 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="search-bar.css" />
   </head>
   <body>
     <div class="ui-kit">
-      <div class="ui-kit__order-date">
-        <div class="order-date">
-          <div class="order-date__input">
-            <label for="blankValue"
-              ><p class="order-date__input-title">Дата и время заказа</p>
-            </label>
-            <input
-              class="input order-date__input_blank"
-              placeholder="Введите"
-              type="text"
-              id="blankValue"
-              value=""
-            />
+      <div class="block ui-kit__block">
+        <div class="block__title">Searchbar</div>
+        <div class="block__content">
+          <div class="searchbar block__searchbar">
+            <div class="searchbar__content">
+              <div class="searchbar__icon"></div>
+              <input
+                class="input searchbar__input"
+                placeholder="Номер заказа или ФИО"
+                type="text"
+                value=""
+              />
+            </div>
           </div>
-          <div class="order-date__input">
-            <label for="incorrectValue"
-              ><p class="order-date__input-title">Дата и время заказа</p>
-            </label>
-            <input
-              class="input order-date__input_incorrect-value"
-              placeholder="Введите"
-              type="text"
-              id="incorrectValue"
-              value="06.12.2021"
-            />
-            <button
-              class="button button_color-default x-button_order-date"
-            ></button>
-          </div>
-          <div class="order-date__input">
-            <p class="order-date__input-title">Дата и время заказа</p>
-            <input
-              class="input order-date__input_disabled"
-              placeholder="Введите"
-              type="text"
-              value="06.12.2021"
-            />
-            <div class="order-date__input-locked-icon"></div>
+          <div class="searchbar block__searchbar">
+            <div class="searchbar__content">
+              <div class="searchbar__icon"></div>
+              <input
+                class="input searchbar__input"
+                placeholder="Номер заказа или ФИО"
+                type="text"
+                value="50744"
+              />
+              <button
+                class="button searchbar__button searchbar__button_x-button"
+              ></button>
+            </div>
           </div>
         </div>
-        <p class="order-date title__order-date">Input</p>
-      </div>
-      <div class="ui-kit__searchbar">
-        <div class="searchbar">
-          <div class="searchbar__input">
-            <input
-              class="input searchbar__input_blank"
-              placeholder="Номер заказа или ФИО"
-              type="text"
-              value=""
-            />
-            <div class="searchbar__input-icon_blank"></div>
-          </div>
-          <div class="searchbar__input">
-            <input
-              class="input searchbar__input_filled"
-              placeholder="Номер заказа или ФИО"
-              type="text"
-              value="50744"
-            />
-            <button
-              class="button button_color-default x-button_searchbar"
-            ></button>
-            <div class="searchbar__input-icon_filled"></div>
-          </div>
-        </div>
-        <p class="searchbar title__searchbar">Searchbar</p>
       </div>
     </div>
   </body>

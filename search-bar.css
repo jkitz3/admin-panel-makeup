@@ -68,7 +68,7 @@ html {
   height: 16px;
   top: 8px;
   left: 9px;
-  background-image: url(../icons/search.svg);
+  background-image: url(./icons/search.svg);
   background-repeat: no-repeat;
   background-color: unset;
   border: unset;
@@ -83,7 +83,7 @@ html {
   height: 16px;
   top: 8px;
   left: 233px;
-  background-image: url(../icons/x-medium.svg);
+  background-image: url(./icons/x-medium.svg);
   background-repeat: no-repeat;
   background-color: unset;
   border: unset;
