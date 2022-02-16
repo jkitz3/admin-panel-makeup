@@ -30,7 +30,7 @@ html {
 }
 .ui-kit__block {
   position: relative;
-  width: 358px;
+  width: 354px;
   padding: 48px;
   border: 1px dashed #a8a8ff;
   border-radius: 4px;
@@ -61,8 +61,8 @@ html {
   width: 16px;
   position: absolute;
   height: 16px;
-  top: 9px;
-  left: 235px;
+  top: 8px;
+  left: 233px;
   background-image: url(../icons/x-medium.svg);
   background-repeat: no-repeat;
   background-color: unset;
@@ -82,7 +82,7 @@ html {
   width: 16px;
   height: 16px;
   top: 8px;
-  left: 235px;
+  left: 233px;
   background-image: url(../icons/locked.svg);
   background-repeat: no-repeat;
   background-color: unset;
