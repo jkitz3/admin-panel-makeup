@@ -1,0 +1,33 @@
+.block__order-date {
+  margin-bottom: 22px;
+}
+.block__order-date:last-child {
+  margin-bottom: 0px;
+}
+.order-date__content {
+  position: relative;
+}
+.order-date__input_incorrect {
+  border-color: #f53152;
+}
+.order-date__input_disabled {
+  background-color: #bad8f5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.order-date__icon_disabled {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 8px;
+  left: 233px;
+  background-image: url(../icons/locked.svg);
+  background-repeat: no-repeat;
+  background-color: unset;
+  border: unset;
+}
+.order-date__title {
+  margin-bottom: 8px;
+  display: inline-block;
+  width: 100%;
+}

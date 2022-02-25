@@ -12,10 +12,60 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="input.css" />
     <link rel="stylesheet" href="search-bar.css" />
   </head>
   <body>
     <div class="ui-kit">
+      <div class="block ui-kit__block">
+        <div class="block__title">Input</div>
+        <div class="block__content">
+          <div class="order-date block__order-date">
+            <label class="order-date__title" for="orderDateBlank"
+              >Дата и время заказа</label
+            >
+            <div class="order-date__content">
+              <input
+                class="input order-date__input"
+                placeholder="Введите"
+                type="text"
+                id="orderDateBlank"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="order-date block__order-date">
+            <label class="order-date__title" for="orderDateIncorrect"
+              >Дата и время заказа</label
+            >
+            <div class="order-date__content">
+              <input
+                class="input order-date__input order-date__input_incorrect"
+                placeholder="Введите"
+                type="text"
+                id="orderDateIncorrect"
+                value="06.12.2021"
+              />
+              <button
+                class="button order-date__button button_x-button"
+              ></button>
+            </div>
+          </div>
+          <div class="order-date block__order-date">
+            <p class="order-date__title">Дата и время заказа</p>
+            <div class="order-date__content">
+              <input
+                class="input order-date__input order-date__input_disabled"
+                placeholder="Введите"
+                type="text"
+                value="06.12.2021"
+              />
+              <div class="order-date__icon order-date__icon_disabled"></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="block ui-kit__block">
         <div class="block__title">Searchbar</div>
         <div class="block__content">
@@ -39,9 +89,7 @@
                 type="text"
                 value="50744"
               />
-              <button
-                class="button searchbar__button searchbar__button_x-button"
-              ></button>
+              <button class="button searchbar__button button_x-button"></button>
             </div>
           </div>
         </div>
