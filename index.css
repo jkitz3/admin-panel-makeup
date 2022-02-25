@@ -11,6 +11,9 @@ html {
   height: 100vh;
   padding: 32px;
   background-color: #ebf0f5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .input {
   width: 100%;
@@ -28,10 +31,29 @@ html {
 .input::-webkit-input-placeholder {
   color: #bad8f5;
 }
+.button {
+  width: 16px;
+  position: absolute;
+  height: 16px;
+  top: 8px;
+  left: 233px;
+  background-repeat: no-repeat;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+}
+.button:focus {
+  outline: none;
+}
+.button_x-button {
+  background-image: url(./icons/x-medium.svg);
+}
 .ui-kit__block {
   position: relative;
   width: 354px;
+  min-width: 354px;
   padding: 48px;
+  margin: 0 48px 48px 0;
   border: 1px dashed #a8a8ff;
   border-radius: 4px;
 }
@@ -57,21 +79,6 @@ html {
 .order-date__input_incorrect {
   border-color: #f53152;
 }
-.order-date__button_x-button {
-  width: 16px;
-  position: absolute;
-  height: 16px;
-  top: 8px;
-  left: 233px;
-  background-image: url(./icons/x-medium.svg);
-  background-repeat: no-repeat;
-  background-color: unset;
-  border: unset;
-  cursor: pointer;
-}
-.order-date__button_x-button:focus {
-  outline: none;
-}
 .order-date__input_disabled {
   background-color: #bad8f5;
   cursor: not-allowed;
@@ -92,4 +99,28 @@ html {
   margin-bottom: 8px;
   display: inline-block;
   width: 100%;
+}
+.block__searchbar {
+  margin-bottom: 32px;
+}
+.block__searchbar:last-child {
+  margin-bottom: 0px;
+}
+.searchbar__content {
+  position: relative;
+}
+.searchbar__icon {
+  width: 16px;
+  position: absolute;
+  height: 16px;
+  top: 8px;
+  left: 9px;
+  background-image: url(./icons/search.svg);
+  background-repeat: no-repeat;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+}
+.searchbar__input {
+  padding-left: 32px;
 }

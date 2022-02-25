@@ -1,0 +1,24 @@
+.block__searchbar {
+  margin-bottom: 32px;
+}
+.block__searchbar:last-child {
+  margin-bottom: 0px;
+}
+.searchbar__content {
+  position: relative;
+}
+.searchbar__icon {
+  width: 16px;
+  position: absolute;
+  height: 16px;
+  top: 8px;
+  left: 9px;
+  background-image: url(../icons/search.svg);
+  background-repeat: no-repeat;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+}
+.searchbar__input {
+  padding-left: 32px;
+}
