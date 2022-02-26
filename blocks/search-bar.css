@@ -20,5 +20,5 @@
   cursor: pointer;
 }
 .searchbar__input {
-  padding-left: 32px;
+  padding-left: 32px !important;
 }

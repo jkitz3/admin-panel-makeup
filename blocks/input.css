@@ -8,7 +8,7 @@
   position: relative;
 }
 .order-date__input_incorrect {
-  border-color: #f53152;
+  border-color: #f53152 !important;
 }
 .order-date__input_disabled {
   background-color: #bad8f5;
