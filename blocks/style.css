@@ -1,6 +1,7 @@
 @import "input.css";
 @import "search-bar.css";
 @import "checkbox-radio.css";
+@import "button.css";
 
 body,
 html {
@@ -10,11 +11,13 @@ html {
   color: #000;
   font-family: "Ubuntu", sans-serif;
 }
+body {
+  background-color: #ebf0f5;
+}
 .ui-kit {
   width: 100%;
   height: 100vh;
   padding: 32px;
-  background-color: #ebf0f5;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -38,21 +41,24 @@ html {
   color: #bad8f5;
 }
 .button {
-  width: 16px;
-  position: absolute;
-  height: 16px;
-  top: 8px;
-  left: 233px;
   background-repeat: no-repeat;
   background-color: unset;
   border: unset;
   cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .button:focus {
   outline: none;
 }
 .button_x-button {
-  background-image: url(../icons/x-medium.svg);
+  width: 16px;
+  position: absolute;
+  height: 16px;
+  top: 8px;
+  left: 233px;
+  background-image: url(./icons/x-medium.svg);
 }
 .ui-kit__block {
   position: relative;
@@ -70,6 +76,11 @@ html {
   width: 104px;
   min-width: 104px;
   padding: 24px;
+}
+.ui-kit__block_button-block {
+  width: 578px;
+  min-width: 578px;
+  padding: 48px;
 }
 .block__content {
   display: flex;
