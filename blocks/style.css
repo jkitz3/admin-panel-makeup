@@ -2,6 +2,7 @@
 @import "search-bar.css";
 @import "checkbox-radio.css";
 @import "button.css";
+@import "dropdown.css";
 
 body,
 html {
@@ -80,6 +81,11 @@ body {
 .ui-kit__block_button-block {
   width: 578px;
   min-width: 578px;
+  padding: 48px;
+}
+.ui-kit__block_dropdown {
+  width: 674px;
+  min-width: 674px;
   padding: 48px;
 }
 .block__content {
