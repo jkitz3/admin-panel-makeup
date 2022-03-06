@@ -265,6 +265,9 @@ body {
   background-color: #459df5;
   color: #fff;
 }
+.button_theme_blue .icon {
+  fill: #fff;
+}
 .button_theme_link {
   color: #459df5;
 }
@@ -280,17 +283,16 @@ body {
 .button_size_small {
   padding: 4px 8px;
 }
-.button-block__icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-}
-.button-block__icon_only {
-  margin-right: 0;
-}
-.button_icon_only {
+.button_size_default + .button_icon_only {
   padding: 8px 8px;
 }
+.button_size_small + .button_icon_only {
+  padding: 4px 4px;
+}
 .icon {
-  fill: #fff;
+  width: 16px;
+  height: 16px;
+}
+.icon + .button__text {
+  margin-left: 8px;
 }

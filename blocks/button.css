@@ -1,6 +1,44 @@
+.ui-kit__block {
+  position: relative;
+  margin: 0 48px 48px 0;
+  border: 1px dashed #a8a8ff;
+  border-radius: 4px;
+}
+.ui-kit__block:last-child {
+  margin: 0;
+}
+.block__content {
+  display: flex;
+  flex-direction: column;
+}
+.ui-kit__block_button-block {
+  width: 578px;
+  min-width: 578px;
+  padding: 48px;
+}
 .block__content_button-block {
-  display: flex !important;
-  flex-direction: row !important;
+  display: flex;
+  flex-direction: row;
+}
+.button {
+  background-repeat: no-repeat;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.button:focus {
+  outline: none;
+}
+.button_x-button {
+  width: 16px;
+  position: absolute;
+  height: 16px;
+  top: 8px;
+  left: 233px;
+  background-image: url(../icons/x-medium.svg);
 }
 .block__button-block {
   margin-right: 48px;
@@ -27,9 +65,12 @@
   height: 104px;
 }
 .button_theme_blue {
-  border: 1px solid #459df5 !important;
-  background-color: #459df5 !important;
+  border: 1px solid #459df5;
+  background-color: #459df5;
   color: #fff;
+}
+.button_theme_blue .icon {
+  fill: #fff;
 }
 .button_theme_link {
   color: #459df5;
@@ -46,17 +87,16 @@
 .button_size_small {
   padding: 4px 8px;
 }
-.button-block__icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-}
-.button-block__icon_only {
-  margin-right: 0;
-}
-.button_icon_only {
+.button_size_default + .button_icon_only {
   padding: 8px 8px;
 }
+.button_size_small + .button_icon_only {
+  padding: 4px 4px;
+}
 .icon {
-  fill: #fff;
+  width: 16px;
+  height: 16px;
+}
+.icon + .button__text {
+  margin-left: 8px;
 }

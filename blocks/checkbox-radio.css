@@ -1,3 +1,21 @@
+.ui-kit__block {
+  position: relative;
+  margin: 0 48px 48px 0;
+  border: 1px dashed #a8a8ff;
+  border-radius: 4px;
+}
+.ui-kit__block:last-child {
+  margin: 0;
+}
+.ui-kit__block_checkbox-radio {
+  width: 104px;
+  min-width: 104px;
+  padding: 24px;
+}
+.block__content {
+  display: flex;
+  flex-direction: column;
+}
 .checkbox__container {
   position: relative;
   margin-right: 40px;
