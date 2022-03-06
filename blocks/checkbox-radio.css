@@ -1,10 +1,26 @@
-.checkbox__container {
-  position: relative;
-  margin-right: 40px;
-  cursor: pointer;
+.ui-kit__block_checkbox-radio {
+  width: 104px;
+  min-width: 104px;
+  padding: 24px;
 }
-.checkbox__container:last-child {
+.block__checkbox,
+.block__radio {
+  margin-right: 24px;
+}
+.block__checkbox:last-child,
+.block__radio:last-child {
   margin-right: 0;
+}
+.block__content_checkbox-radio {
+  flex-direction: row;
+}
+.checkbox__container {
+  display: inline-block;
+  width: 100%;
+  min-height: 32px;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
 }
 .checkbox__container::before {
   content: "";
@@ -35,12 +51,12 @@
   opacity: 0;
 }
 .radio__container {
+  display: inline-block;
+  width: 100%;
+  min-height: 32px;
   position: relative;
-  margin-right: 38px;
+  padding-left: 24px;
   cursor: pointer;
-}
-.radio__container:last-child {
-  margin-right: 0;
 }
 .radio__container::before {
   content: "";
@@ -69,6 +85,11 @@
   background-repeat: no-repeat;
   opacity: 0;
 }
+.checkbox,
+.radio {
+  height: 16px;
+  min-width: 16px;
+}
 .checkbox__input,
 .radio__input {
   display: none;
@@ -85,4 +106,10 @@
 }
 .radio__input:checked + .radio__container::after {
   opacity: 1;
+}
+.checkbox-dropdown__item,
+.radio-dropdown__item,
+.checkbox-dropdown__checkbox,
+.radio-dropdown__radio {
+  width: 100%;
 }

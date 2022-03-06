@@ -1,3 +1,8 @@
+.ui-kit__block_dropdown {
+  width: 674px;
+  min-width: 674px;
+  padding: 48px;
+}
 .dropdown__wrapper {
   display: flex;
   justify-content: flex-start;
@@ -32,11 +37,6 @@
   border-radius: 8px;
   background: #fff;
 }
-.checkbox__container_dropdown,
-.radio__container_dropdown {
-  display: inline-block;
-  padding-left: 24px;
-}
 input[type="radio"]:checked + label {
   color: #459df5;
 }
@@ -59,7 +59,8 @@ input[type="checkbox"]:checked + label {
   background: #fff;
 }
 .select-page__input {
-  padding: 0 4px 0 8px !important;
+  border: 1px solid #459df5;
+  padding: 0 4px 0 8px;
 }
 .select-page__title,
 .delete-record__title,
@@ -69,17 +70,16 @@ input[type="checkbox"]:checked + label {
 }
 .delete-record__button,
 .select-theme__button {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   margin-bottom: 8px;
 }
 .delete-record__button:last-child,
 .select-theme__button:last-child {
   margin-bottom: 0;
 }
-.select-theme__icon {
-  margin-right: 4px;
+.button_full-width {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .select-theme__icon_unpushed {
   fill: #459df5;
