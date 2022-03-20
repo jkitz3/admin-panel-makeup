@@ -283,10 +283,10 @@ body {
 .button_size_small {
   padding: 4px 8px;
 }
-.button_size_default + .button_icon_only {
+.button_size_default + .button_icon-only {
   padding: 8px 8px;
 }
-.button_size_small + .button_icon_only {
+.button_size_small + .button_icon-only {
   padding: 4px 4px;
 }
 .icon {
