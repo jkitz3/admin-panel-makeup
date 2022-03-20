@@ -1,3 +1,8 @@
+.ui-kit__block_checkbox-radio {
+  width: 104px;
+  min-width: 104px;
+  padding: 24px;
+}
 .block__checkbox,
 .block__radio {
   margin-right: 24px;
@@ -7,9 +12,12 @@
   margin-right: 0;
 }
 .block__content_checkbox-radio {
-  flex-direction: row !important;
+  flex-direction: row;
 }
 .checkbox__container {
+  display: inline-block;
+  width: 100%;
+  min-height: 32px;
   position: relative;
   padding-left: 24px;
   cursor: pointer;
@@ -43,6 +51,9 @@
   opacity: 0;
 }
 .radio__container {
+  display: inline-block;
+  width: 100%;
+  min-height: 32px;
   position: relative;
   padding-left: 24px;
   cursor: pointer;
@@ -95,4 +106,10 @@
 }
 .radio__input:checked + .radio__container::after {
   opacity: 1;
+}
+.checkbox-dropdown__item,
+.radio-dropdown__item,
+.checkbox-dropdown__checkbox,
+.radio-dropdown__radio {
+  width: 100%;
 }
