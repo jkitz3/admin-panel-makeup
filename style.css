@@ -153,9 +153,8 @@ body {
 .checkbox__container {
   display: inline-block;
   width: 100%;
-  min-height: 32px;
   position: relative;
-  padding-left: 24px;
+  padding: 0 0 16px 24px;
   cursor: pointer;
 }
 .checkbox__container::before {
@@ -189,9 +188,8 @@ body {
 .radio__container {
   display: inline-block;
   width: 100%;
-  min-height: 32px;
   position: relative;
-  padding-left: 24px;
+  padding: 0 0 16px 24px;
   cursor: pointer;
 }
 .radio__container::before {
