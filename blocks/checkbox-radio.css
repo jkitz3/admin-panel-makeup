@@ -1,4 +1,4 @@
-.ui-kit__block_checkbox-radio {
+.ui-kit__block_size-small {
   padding: 24px;
 }
 .block__checkbox,
@@ -12,10 +12,14 @@
 .block__content_checkbox-radio {
   flex-direction: row;
 }
+.checkbox__content,
+.radio__content {
+  height: 16px;
+}
 .checkbox__container {
   display: inline-block;
   width: 100%;
-  min-height: 32px;
+  min-height: 16px;
   position: relative;
   cursor: pointer;
 }
@@ -50,7 +54,7 @@
 .radio__container {
   display: inline-block;
   width: 100%;
-  min-height: 32px;
+  min-height: 16px;
   position: relative;
   cursor: pointer;
 }

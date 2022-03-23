@@ -133,7 +133,7 @@ body {
 .searchbar__input {
   padding-left: 32px;
 }
-.ui-kit__block_checkbox-radio {
+.ui-kit__block_size-small {
   width: 104px;
   min-width: 104px;
   padding: 24px;
@@ -149,10 +149,14 @@ body {
 .block__content_checkbox-radio {
   flex-direction: row;
 }
+.checkbox__content,
+.radio__content {
+  height: 16px;
+}
 .checkbox__container {
   display: inline-block;
   width: 100%;
-  min-height: 32px;
+  min-height: 16px;
   position: relative;
   padding-left: 24px;
   cursor: pointer;
@@ -188,7 +192,7 @@ body {
 .radio__container {
   display: inline-block;
   width: 100%;
-  min-height: 32px;
+  min-height: 16px;
   position: relative;
   padding-left: 24px;
   cursor: pointer;
