@@ -1,4 +1,6 @@
 .ui-kit__block_size-small {
+  width: 104px;
+  min-width: 104px;
   padding: 24px;
 }
 .block__checkbox,

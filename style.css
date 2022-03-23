@@ -134,6 +134,8 @@ body {
   padding-left: 32px;
 }
 .ui-kit__block_size-small {
+  width: 104px;
+  min-width: 104px;
   padding: 24px;
 }
 .block__checkbox,
@@ -345,8 +347,7 @@ body {
 .form-block__delete-record {
   margin-right: 48px;
 }
-.radio__container_dropdown,
-.checkbox__container_dropdown {
+.checkbox__container_style-dropdown {
   padding-left: 24px;
 }
 .checkbox-dropdown,
@@ -410,6 +411,15 @@ input[type="checkbox"]:checked + label {
 }
 .select-theme__icon_pushed {
   fill: #fff;
+}
+.radio__container_no-ico {
+  padding-left: 0;
+}
+.radio__container_no-ico::before {
+  display: none;
+}
+.radio__container_no-ico::after {
+  display: none;
 }
 .checkbox-dropdown__item,
 .radio-dropdown__item,
