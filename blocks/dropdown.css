@@ -87,3 +87,12 @@ input[type="checkbox"]:checked + label {
 .select-theme__icon_pushed {
   fill: #fff;
 }
+.radio__container_no-ico {
+  padding-left: 0;
+}
+.radio__container_no-ico::before {
+  display: none;
+}
+.radio__container_no-ico::after {
+  display: none;
+}
