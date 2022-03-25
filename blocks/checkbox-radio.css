@@ -16,6 +16,7 @@
 }
 .checkbox__content,
 .radio__content {
+  width: 16px;
   height: 16px;
 }
 .checkbox__container {
