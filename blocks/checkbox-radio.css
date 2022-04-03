@@ -1,4 +1,4 @@
-.ui-kit__block_checkbox-radio {
+.ui-kit__block_size-small {
   width: 104px;
   min-width: 104px;
   padding: 24px;
@@ -14,12 +14,16 @@
 .block__content_checkbox-radio {
   flex-direction: row;
 }
+.checkbox__content,
+.radio__content {
+  width: 16px;
+  height: 16px;
+}
 .checkbox__container {
   display: inline-block;
   width: 100%;
-  min-height: 32px;
   position: relative;
-  padding-left: 24px;
+  padding: 0 0 16px 24px;
   cursor: pointer;
 }
 .checkbox__container::before {
@@ -53,9 +57,8 @@
 .radio__container {
   display: inline-block;
   width: 100%;
-  min-height: 32px;
   position: relative;
-  padding-left: 24px;
+  padding: 0 0 16px 24px;
   cursor: pointer;
 }
 .radio__container::before {
@@ -100,12 +103,20 @@
 }
 .checkbox__input:checked + .checkbox__container::after {
   opacity: 1;
+  border: none;
 }
 .radio__input:checked + .radio__container::before {
   background-color: #459df5;
 }
 .radio__input:checked + .radio__container::after {
   opacity: 1;
+  border: none;
+}
+.checkbox-dropdown__item,
+.radio-dropdown__item,
+.checkbox-dropdown__checkbox,
+.radio-dropdown__radio {
+  width: 100%;
 }
 .checkbox-dropdown__item,
 .radio-dropdown__item,
