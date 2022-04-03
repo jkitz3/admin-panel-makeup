@@ -118,3 +118,9 @@
 .radio-dropdown__radio {
   width: 100%;
 }
+.checkbox-dropdown__item,
+.radio-dropdown__item,
+.checkbox-dropdown__checkbox,
+.radio-dropdown__radio {
+  width: 100%;
+}
